@@ -19,9 +19,9 @@ export default function Home() {
     <div>
       {daysList.map((element, index) => (
         <div key={index}>
-          <h2>{element.day}</h2>
           <h3>{element.msg}</h3>
           <h3>{element.dayWent}</h3>
+          <h2>{element.day}</h2>
         </div>
       ))}
     </div>
