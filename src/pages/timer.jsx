@@ -45,6 +45,15 @@ export default function Timer() {
     setTime(convertedTime);
     console.log("sinceLeft-->>", sinceLeft);
     setSinceLeft(currentTime2 - leftTime);
+    let titleString = "";
+    if (convertedTime) {
+      // if (convertedTime.weeks > 1) {
+
+      // }
+      titleString = `${convertedTime.weeks}W ${convertedTime.days}D ${convertedTime.hours}H ${convertedTime.minutes}M ${convertedTime.seconds}S`;
+    }
+console.log("titleString",titleString);
+    document.title = titleString;
   }
 
   useEffect(() => {
