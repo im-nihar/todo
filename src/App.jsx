@@ -8,11 +8,10 @@ function App() {
 
   return (
     <>
-      <h1>Her</h1>
+      <h1>All About Her</h1>
       <div className="card">
         <Timer/>
         <Home/>
-
       </div>
     </>
   )

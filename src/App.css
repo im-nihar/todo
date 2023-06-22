@@ -3,5 +3,9 @@
   padding: 2em;
 }
 
+h1{
+  text-decoration: underline;
+}
+
 .card {
 }
