@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./timer.css";
 
 export default function Timer() {
   const leftTime = Date.UTC(2023, 5, 19, 1, 45, 25);
@@ -41,9 +42,9 @@ export default function Timer() {
   function doStuff() {
     const currentTime2 = Date.now();
     const convertedTime = convertMilliseconds(sinceLeft);
-    console.log("convertedTime", convertedTime);
+    // console.log("convertedTime", convertedTime);
     setTime(convertedTime);
-    console.log("sinceLeft-->>", sinceLeft);
+    // console.log("sinceLeft-->>", sinceLeft);
     setSinceLeft(currentTime2 - leftTime);
     let titleString = "";
     if (convertedTime) {
@@ -52,7 +53,7 @@ export default function Timer() {
       // }
       titleString = `${convertedTime.weeks}W ${convertedTime.days}D ${convertedTime.hours}H ${convertedTime.minutes}M ${convertedTime.seconds}S`;
     }
-console.log("titleString",titleString);
+    // console.log("titleString", titleString);
     document.title = titleString;
   }
 
@@ -77,19 +78,19 @@ console.log("titleString",titleString);
         ))}
       </h1> */}
       {time ? (
-        <div style={{ display: "flex" }}>
-          <p style={{ margin: "2px" }}>{time?.weeks}</p>
-          <p style={{ margin: "2px" }}>{time?.days}</p>
-          <p style={{ margin: "2px" }}>{time?.hours}</p>
-          <p style={{ margin: "2px" }}>{time?.minutes}</p>
-          <p style={{ margin: "2px" }}>{time?.seconds}</p>
+        <div className="main-container">
+          <div className="element">{time?.weeks} weeks </div>
+          <div className="element">{time?.days} days </div>
+          <div className="element">{time?.hours} hours </div>
+          <div className="element">{time?.minutes} mins </div>
+          <div className="element">{time?.seconds} secs </div>
         </div>
       ) : (
         <div>No Time</div>
       )}
-      <div>{leftTime}</div>
+      {/* <div>{leftTime}</div>
       <div>{currentTime}</div>
-      <div>{sinceLeft}</div>
+      <div>{sinceLeft}</div> */}
     </div>
   );
 }
