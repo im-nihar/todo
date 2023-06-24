@@ -30,6 +30,17 @@ export default function Home() {
       dayWent:
         "She cried today because of some nonsense fight (not because of me though). No calls till dinner time. Did eveything alone today",
     },
+    {
+      day: "Day 5",
+      msg: "I got a compliment today",
+      dayWent:
+        "Just a normal hectic day. Dem meme true (about the compliment towards men)",
+    },
+    {
+      day: "Day 6",
+      msg: "She laughed Today",
+      dayWent: "She laughed the way I always wanted to see",
+    },
   ];
 
   // useEffect(() => {
