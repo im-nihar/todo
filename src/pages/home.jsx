@@ -41,6 +41,17 @@ export default function Home() {
       msg: "She laughed Today",
       dayWent: "She laughed the way I always wanted to see",
     },
+    {
+      day: "Day 7",
+      msg: "Wish she was here",
+      dayWent:
+        "Just a another normal day without her. Dinner was cooked had a good time. But missed her.",
+    },
+    {
+      day: "Day 8",
+      msg: "I miss her",
+      dayWent: "Another normal day. Missed her.",
+    },
   ];
 
   // useEffect(() => {
